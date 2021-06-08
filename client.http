@@ -1,0 +1,13 @@
+GET http://localhost:8000/tracks/
+
+###
+
+POST http://localhost:8000/api/tracks/
+content-type: application/json
+
+{
+  "name": "Lost Cause",
+  "length": 205,
+  "urls": ["https://open.spotify.com/track/0WbTWirudQrqXNQ3rq2vMD?si=d447e308d7e34ce3"],
+  "artist": "Romeo Indigo Romeo"
+}
