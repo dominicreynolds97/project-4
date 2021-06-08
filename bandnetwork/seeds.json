@@ -1,0 +1,57 @@
+[
+{
+  "model": "bandnetwork.track",
+  "pk": 1,
+  "fields": {
+    "name": "Forgotten Son",
+    "length": 210,
+    "urls": "[\"https://open.spotify.com/track/3tm1wG7epJ28d44J8783y5?si=9ed7202134314ccc\"]",
+    "artist": "Reasy Ajarro"
+  }
+},
+{
+  "model": "bandnetwork.track",
+  "pk": 2,
+  "fields": {
+    "name": "Above",
+    "length": 252,
+    "urls": "[\"https://open.spotify.com/track/7jfllByM6keB0ZQ5d0hzp9?si=1e9455411c1f4c6d\"]",
+    "artist": "Reasy Ajarro"
+  }
+},
+{
+  "model": "bandnetwork.track",
+  "pk": 3,
+  "fields": {
+    "name": "Separation",
+    "length": 166,
+    "urls": "[\"https://open.spotify.com/track/7DWm5QBEP66VBvMtD1PDgN?si=297fd72cc829488e\", \"https://www.youtube.com/watch?v=NycTCxOZ9Zo&ab_channel=ReasyAjarro\"]",
+    "artist": "Reasy Ajarro"
+  }
+},
+{
+  "model": "bandnetwork.artist",
+  "pk": 1,
+  "fields": {
+    "name": "Reasy Ajarro",
+    "members": "[\"Martin Harris\", \"Iwan Hynds\", \"David Dalzell\"]",
+    "genres": "[\"Rock\"]",
+    "logo": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/147400959_239364914355364_4447112219842243680_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=RWasUVRDRFkAX_CmsVy&_nc_ht=scontent-man2-1.xx&oh=d247eda",
+    "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/89094006_104441547847702_1948873463900930048_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=e3f864&_nc_ohc=LQYWQsITLasAX8rRNqC&_nc_ht=scontent-man2-1.xx&oh=4c73d1a9",
+    "description": "Belfast based Rock band, bringing big tunes.",
+    "year_formed": 2020
+  }
+},
+{
+  "model": "bandnetwork.release",
+  "pk": 1,
+  "fields": {
+    "name": "Stop and Stare",
+    "artist": 1,
+    "tracks": "[\"1\", \"2\", \"3\"]",
+    "release_date": "2021-02-12",
+    "urls": "[\"https://open.spotify.com/album/6DOcbL0HcrOo4dS6GE7n5J?si=Rt1_ZEJmT6maK65SrDJbhw\"]",
+    "artwork": "url"
+  }
+}
+]
