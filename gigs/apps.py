@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class BandnetworkConfig(AppConfig):
+class GigsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'bandnetwork'
+    name = 'gigs'

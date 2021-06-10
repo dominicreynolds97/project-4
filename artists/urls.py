@@ -1,4 +1,3 @@
-from bandnetwork.serializers import ReleaseSerializer
 from django.urls import path
 from .views import ArtistListView, TrackListView, ReleasesListView, ArtistDetailView, TrackDetailView, ReleaseDetailView
 

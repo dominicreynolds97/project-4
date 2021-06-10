@@ -2,12 +2,16 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
-from rest_framework import serializers, status
+from rest_framework import status
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .models import Track, Artist, Release
-from .serializers import ArtistSerializer, ReleaseSerializer, TrackSerializer
-
+from .serializers import ArtistSerializer,  ReleaseSerializer, TrackSerializer
 # Create your views here.
+
 class TrackListView(APIView):
+
+    permission_classes = (IsAuthenticatedOrReadOnly, )
+
     def get(self, _request):
         tracks = Track.objects.all()
         serialized_tracks = TrackSerializer(tracks, many=True)
