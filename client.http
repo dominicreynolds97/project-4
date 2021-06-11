@@ -1,0 +1,32 @@
+DELETE http://localhost:8000/api/artists/2/
+Content-Type: application/json
+
+{
+  "name": "Surf Green",
+  "yearFormed": 2015,
+  "description": "dead",
+  "location": "Downpatrick",
+  "genres": [
+    1,
+    2
+  ]
+}
+###
+POST http://localhost:8000/api/auth/register/
+Content-Type: application/json
+
+{
+  "username": "user3",
+  "email": "email3@email.com",
+  "password": "Frenchie1233@",
+  "passwordConfirmation": "Frenchie1233@"
+}
+
+###
+POST http://localhost:8000/api/auth/login/
+Content-Type: application/json
+
+{
+  "email": "email3@email.com",
+  "password": "Frenchie1233@"
+}

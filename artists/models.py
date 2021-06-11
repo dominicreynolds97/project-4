@@ -2,9 +2,16 @@ from django.db import models
 from django.db.models.deletion import CASCADE
 from django.db.models.fields import CharField
 from django.db.models.fields.related import ManyToManyField
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 class Genre(models.Model):
     name = CharField(max_length=50)
+    favorited_by = ManyToManyField(
+        User,
+        related_name='favorite_genres',
+        blank=True
+    )
 
     def __str__(self):
         return f'{self.name}'
@@ -23,6 +30,26 @@ class Instrument(models.Model):
     def __str__(self):
         return f'{self.name}'
 
+class Musician(models.Model):
+    name = models.CharField(max_length=50)
+    avatar = models.CharField(max_length=300)
+    instruments = ManyToManyField(
+        Instrument,
+        related_name='musicians',
+        blank=True
+    )
+    user = models.ForeignKey(
+        User,
+        related_name='musician',
+        on_delete=CASCADE,
+        blank=True,
+        default=None,
+        null=True
+    )
+
+    def __str__(self):
+        return f'Musician {self.id} on {self.name}'
+
 class Artist(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=500)
@@ -38,6 +65,16 @@ class Artist(models.Model):
     links = models.ManyToManyField(
         Link,
         related_name='artists',
+        blank=True
+    )
+    musicians = ManyToManyField(
+        Musician,
+        related_name='artists',
+        blank=True
+    )
+    favorited_by = ManyToManyField(
+        User,
+        related_name='favorite_artists',
         blank=True
     )
 
@@ -64,22 +101,9 @@ class Release(models.Model):
         related_name='releases',
         blank=True
     )
-
-    def __str__(self):
-        return f'{self.name}'
-
-
-class Musician(models.Model):
-    name = CharField(max_length=50)
-    avatar = CharField(max_length=300)
-    instruments = ManyToManyField(
-        Instrument,
-        related_name='musicians',
-        blank=True
-    )
-    artists = ManyToManyField(
-        Artist,
-        related_name='musicians',
+    favorited_by = ManyToManyField(
+        User,
+        related_name='favorite_releases',
         blank=True
     )
 
@@ -109,9 +133,9 @@ class Track(models.Model):
         related_name='tracks',
         blank=True
     )
-    credits = ManyToManyField(
-        Musician,
-        related_name='tracks',
+    favorited_by = ManyToManyField(
+        User,
+        related_name='favorite_tracks',
         blank=True
     )
 

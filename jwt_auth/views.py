@@ -4,7 +4,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import User, UserSerializer
+from artists.models import Genre
 from datetime import datetime, timedelta
+from rest_framework.permissions import IsAuthenticated
 import jwt
 from django.conf import settings
 
@@ -15,10 +17,10 @@ class RegisterUserView(APIView):
         if user.is_valid():
             user.save()
             return Response({'message': 'Registration Succesfull'}, status=status.HTTP_201_CREATED)
-        
+        return Response(user.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class LoginUserView(APIView):
-    def poast(self, request):
+    def post(self, request):
         email = request.data.get('email')
         password = request.data.get('password')
 

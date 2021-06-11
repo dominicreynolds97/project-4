@@ -1,0 +1,160 @@
+[
+{
+  "model": "artists.genre",
+  "pk": 1,
+  "fields": {
+    "name": "Rock"
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 2,
+  "fields": {
+    "name": "Punk"
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Hard Rock"
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 4,
+  "fields": {
+    "name": "Metal"
+  }
+},
+{
+  "model": "artists.link",
+  "pk": 1,
+  "fields": {
+    "platform": "Spotify",
+    "url": "https://open.spotify.com/track/7DWm5QBEP66VBvMtD1PDgN?si=297fd72cc829488e"
+  }
+},
+{
+  "model": "artists.link",
+  "pk": 2,
+  "fields": {
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=NycTCxOZ9Zo&ab_channel=ReasyAjarro"
+  }
+},
+{
+  "model": "artists.instrument",
+  "pk": 1,
+  "fields": {
+    "name": "Guitar",
+    "icon": "https://static.thenounproject.com/png/52666-200.png"
+  }
+},
+{
+  "model": "artists.instrument",
+  "pk": 2,
+  "fields": {
+    "name": "Vocals",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAjVBMVEX///8AAAAEBAT6+voKCgr39/cODg4oKCjr6+taWloVFRXNzc1dXV3ExMT8/PyhoaHe3t7l5eVpaWlkZGS0tLQ1NTXy8vJubm5/f39NTU2Tk5PY2Ni6urouLi7JyckbGxtFRUU/Pz+ampqGhoYZGRmDg4M5OTmpqamNjY2fn59SUlJ2dnZBQUFJSUkiIiKAQvArAAAGkklEQVR4nO2deVfiMBTFSVnKIp"
+  }
+},
+{
+  "model": "artists.instrument",
+  "pk": 3,
+  "fields": {
+    "name": "Bass Guitar",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAflBMVEX///8AAAAFBQX6+vp/f3+urq7w8PD5+fkQEBDz8/Pl5eX29vYJCQnY2NidnZ0yMjIrKysZGRnf399RUVF7e3vPz8+KiooWFhaVlZXHx8clJSU1NTUeHh5kZGSoqKi2trZJSUk+Pj67u7tbW1tLS0twcHCPj49BQUFhYWFycnJj20l5AAAInUlEQVR4nO1daZeiOhBlURQUXBAV3EDbtuf//8FHAoSsuP"
+  }
+},
+{
+  "model": "artists.instrument",
+  "pk": 4,
+  "fields": {
+    "name": "Drums",
+    "icon": "https://cdn0.iconfinder.com/data/icons/musical-instruments-12/128/drumsticks-512.png"
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 1,
+  "fields": {
+    "name": "Reasy Ajarro",
+    "description": "Belfast based band, bringing big tunes.",
+    "year_formed": 2020,
+    "logo": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/147400959_239364914355364_4447112219842243680_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=T6VdrVVdy4cAX_2eHYX&_nc_ht=scontent-man2-1.xx&oh=c4e62db85651ad0dfd32a5245d863660&oe=60E6AFD9",
+    "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/89094006_104441547847702_1948873463900930048_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=e3f864&_nc_ohc=LQYWQsITLasAX8rRNqC&_nc_ht=scontent-man2-1.xx&oh=4c73d1a9",
+    "location": "Belfast",
+    "genres": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "links": [],
+    "musicians": []
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 1,
+  "fields": {
+    "name": "Stop and Stare",
+    "type": "EP",
+    "release_date": "2021-02-12",
+    "artwork": "url",
+    "artist": 1,
+    "genres": [
+      1,
+      2,
+      3
+    ],
+    "links": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 2,
+  "fields": {
+    "name": "Forgotten Son",
+    "length": 210,
+    "artist": 1,
+    "release": 1,
+    "genres": [
+      1,
+      2,
+      3
+    ],
+    "links": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 3,
+  "fields": {
+    "name": "Above",
+    "length": 252,
+    "artist": 1,
+    "release": 1,
+    "genres": [
+      1,
+      3
+    ],
+    "links": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 4,
+  "fields": {
+    "name": "Separation",
+    "length": 166,
+    "artist": 1,
+    "release": 1,
+    "genres": [],
+    "links": [
+      2
+    ]
+  }
+}
+]

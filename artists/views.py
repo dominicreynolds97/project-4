@@ -3,125 +3,106 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 from .models import Track, Artist, Release
-from .serializers import ArtistSerializer,  ReleaseSerializer, TrackSerializer
-# Create your views here.
+from .serializers import (
+    ArtistSerializer,  
+    ReleaseSerializer, 
+    TrackSerializer, 
+    PopulatedArtistSerializer,
+    PopulatedTrackSerializer,
+    PopulatedReleaseSerializer
+)
+from hooks.views import FavoriteView, ListView, DetailView
 
-class TrackListView(APIView):
+class TrackListView(ListView):
+    def __init__(self):
+        self.model = Track
+        self.serial = TrackSerializer
 
-    permission_classes = (IsAuthenticatedOrReadOnly, )
-
-    def get(self, _request):
-        tracks = Track.objects.all()
-        serialized_tracks = TrackSerializer(tracks, many=True)
-        return Response(serialized_tracks.data, status=status.HTTP_200_OK)
-
-    def post(self, request):
-        serialized_tracks = TrackSerializer(data=request.data)
-        if serialized_tracks.is_valid():
-            serialized_tracks.save()
-            return Response(serialized_tracks.data, status=status.HTTP_201_CREATED)
-        return Response(serialized_tracks.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
-
-class TrackDetailView(APIView):
-    def get_track(self, pk):
-        try:
-            return Track.objects.get(pk=pk)
-        except Track.DoesNotExist:
-            raise NotFound()
-
-    def get(self, _request, pk):
-        track = self.get_track(pk=pk)
-        serialized_track = TrackSerializer(track)
-        return Response(serialized_track.data, status=status.HTTP_200_OK)
-    
-    def delete(self, _request, pk):
-        track = self.get_track(pk=pk)
-        track.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
-    def put(self, request, pk):
-        track = self.get_track(pk=pk)
-        updated_track = TrackSerializer(track, data=request.data)
-        if updated_track.is_valid():
-            updated_track.save()
-            return Response(updated_track.data, status=status.HTTP_202_ACCEPTED)
-        return Response(updated_track.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+class TrackDetailView(DetailView):
+    def __init__(self):
+        self.model = Track
+        self.populated_serial = PopulatedTrackSerializer
+        self.serial = TrackSerializer
 
 
-class ArtistListView(APIView):
-    def get(self, _request):
-        artists = Artist.objects.all()
-        serialized_artists = ArtistSerializer(artists, many=True)
-        return Response(serialized_artists.data, status=status.HTTP_200_OK)
+class ArtistListView(ListView):
+    def __init__(self):
+        self.model = Artist
+        self.serial = ArtistSerializer
 
-    def post(self, request):
-        serialized_artists = ArtistSerializer(data=request.data)
-        if serialized_artists.is_valid():
-            serialized_artists.save()
-            return Response(serialized_artists.data, status=status.HTTP_201_CREATED)
-        return Response(serialized_artists.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+class ArtistDetailView(DetailView):
+    def __init__(self):
+        self.model = Artist
+        self.populated_serial = PopulatedArtistSerializer
+        self.serial = ArtistSerializer
 
-class ArtistDetailView(APIView):
-    def get_artist(self, pk):
-        try:
-            return Artist.objects.get(pk=pk)
-        except Artist.DoesNotExist:
-            raise NotFound()
+class ReleasesListView(ListView):
+    def __init__(self):
+        self.model = Release
+        self.serial = ReleaseSerializer
 
-    def get(self, _request, pk):
-        artist = self.get_artist(pk=pk)
-        serialized_artist = ArtistSerializer(artist)
-        return Response(serialized_artist.data, status=status.HTTP_200_OK)
+class ReleaseDetailView(DetailView):
+    def __init__(self):
+        self.model = Release
+        self.populated_serial = PopulatedReleaseSerializer
+        self.serial = ReleaseSerializer
 
-    def delete(self, _request, pk):
-        artist = self.get_artist(pk=pk)
-        artist.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-    
-    def put(self, request, pk):
-        artist = self.get_artist(pk=pk)
-        updated_artist = ArtistSerializer(artist, data=request.data)
-        if updated_artist.is_valid():
-            updated_artist.save()
-            return Response(updated_artist.data, status=status.HTTP_202_ACCEPTED)
-        return Response(updated_artist.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+class ArtistFavoriteView(FavoriteView):
+    permission_classes = (IsAuthenticated, )
+    def __init__(self):
+        self.model = Artist
+        self.serial = PopulatedArtistSerializer
+    # def post(self, request, pk):
+    #     try:
+    #         artist = Artist.objects.get(pk=pk)
+    #         if request.user in artist.favorited_by.all():
+    #             artist.favorited_by.remove(request.user.id)
+    #         else:
+    #             artist.favorited_by.add(request.user.id)
+    #         artist.save()
+    #         serialized_artist = PopulatedArtistSerializer(artist)
+    #         return Response(serialized_artist.data, status=status.HTTP_202_ACCEPTED)
+    #     except Artist.DoesNotExist:
+    #         raise NotFound()
 
-class ReleasesListView(APIView):
-    def get(self, _response):
-        releases = Release.objects.all()
-        serialized_releases = ReleaseSerializer(releases, many=True)
-        return Response(serialized_releases.data, status=status.HTTP_200_OK)
+class ReleaseFavoriteView(APIView):
+    permission_classes = (IsAuthenticated, )
+    def __init__(self):
+        self.model = Release
+        self.serial = PopulatedReleaseSerializer
+    # permission_classes = (IsAuthenticated, )
 
-    def post(self, request):
-        serialized_release = ReleaseSerializer(data=request.data)
-        if serialized_release.is_valid():
-            serialized_release.save()
-            return Response(serialized_release.data, status=status.HTTP_201_CREATED)
-        return Response(serialized_release.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+    # def post(self, request, pk):
+    #     try:
+    #         release = Release.objects.get(pk=pk)
+    #         if request.user in release.favorited_by.all():
+    #             release.favorited_by.remove(request.user.id)
+    #         else:
+    #             release.favorited_by.add(request.user.id)
+    #         release.save()
+    #         serialized_release = PopulatedReleaseSerializer(release)
+    #         return Response(serialized_release.data, status=status.HTTP_202_ACCEPTED)
+    #     except Artist.DoesNotExist:
+    #         raise NotFound()
 
-class ReleaseDetailView(APIView):
-    def get_release(self, pk):
-        try:
-            return Release.objects.get(pk=pk)
-        except Release.DoesNotExist:
-            raise NotFound()
+class TrackFavoriteView(APIView):
+    permission_classes = (IsAuthenticated, )
+    def __init__(self):
+        self.model = Track
+        self.serial = PopulatedTrackSerializer
+    # permission_classes = (IsAuthenticated, )
 
-    def get(self, _response, pk):
-        release = self.get_release(pk=pk)
-        serialized_release = ReleaseSerializer(release)
-        return Response(serialized_release, status=status.HTTP_200_OK)
-
-    def delete(self, _request, pk):
-        release = self.get_release(pk=pk)
-        release.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
-    def put(self, request, pk):
-        release = self.get_releaset(pk=pk)
-        updated_release = ReleaseSerializer(release, data=request.data)
-        if updated_release.is_valid():
-            updated_release.save()
-            return Response(updated_release.data, status=status.HTTP_202_ACCEPTED)
-        return Response(updated_release.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+    # def post(self, request, pk):
+    #     try:
+    #         track = Track.objects.get(pk=pk)
+    #         if request.user in track.favorited_by.all():
+    #             track.favorited_by.remove(request.user.id)
+    #         else:
+    #             track.favorited_by.add(request.user.id)
+    #         track.save()
+    #         serialized_track = PopulatedTrackSerializer(track)
+    #         return Response(serialized_track.data, status=status.HTTP_202_ACCEPTED)
+    #     except Artist.DoesNotExist:
+    #         raise NotFound()
