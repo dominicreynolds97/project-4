@@ -5,7 +5,7 @@ from jwt_auth.models import User
 from django.db import models
 from artists.models import Artist
 from django.contrib.auth import get_user_model
-User = jwt_auth.User
+User = get_user_model()
 
 # Create your models here.
 class Comment(models.Model):

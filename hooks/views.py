@@ -40,4 +40,4 @@ class FavoriteView(APIView):
 
     def post(self, request, pk):
         print('here')
-        favorite(self.model, self.serial, request, pk)
+        return favorite(self.model, self.serial, request, pk)

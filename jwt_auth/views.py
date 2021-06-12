@@ -1,3 +1,5 @@
+from jwt_auth.populated import PopulatedUserSerializer
+from hooks.views import DetailView
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 from rest_framework.views import APIView
@@ -9,6 +11,8 @@ from datetime import datetime, timedelta
 from rest_framework.permissions import IsAuthenticated
 import jwt
 from django.conf import settings
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 # Create your views here.
 class RegisterUserView(APIView):
@@ -21,6 +25,7 @@ class RegisterUserView(APIView):
 
 class LoginUserView(APIView):
     def post(self, request):
+        print(request.data)
         email = request.data.get('email')
         password = request.data.get('password')
 
@@ -42,3 +47,9 @@ class LoginUserView(APIView):
         return Response(
             {'token': token, 'message': f'Welcome back {user.username}'}
         )
+
+class UserDetailView(DetailView):
+    def __init__(self):
+        self.model = User
+        self.populated_serial = PopulatedUserSerializer
+        self.serial = UserSerializer

@@ -2,6 +2,8 @@ from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
 from rest_framework import status
 
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
+
 def get_all(model, serial):
     data = model.objects.all()
     serialized_data = serial(data, many=True)
@@ -39,6 +41,7 @@ def update_one(model, serial, request, pk):
     return Response(updated_data.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 def favorite(model, serial, request, pk):
+    permission_classes = (IsAuthenticated, )
     try:
         data = model.objects.get(pk=pk)
         if request.user in data.favorited_by.all():

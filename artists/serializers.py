@@ -38,11 +38,14 @@ class TrackSerializer(serializers.ModelSerializer):
 class PopulatedArtistSerializer(ArtistSerializer):
     genres = GenreSerializer(many=True)
     musicians = MusicianSerializer(many=True)
+    releases = ReleaseSerializer(many=True)
     favorited_by = UserSerializer(many=True)
 
 class PopulatedReleaseSerializer(ReleaseSerializer):
     genres = GenreSerializer(many=True)
     favorited_by = UserSerializer(many=True)
+    tracks = TrackSerializer(many=True)
+    artist = ArtistSerializer()
 
 class PopulatedTrackSerializer(TrackSerializer):
     genres = GenreSerializer(many=True)

@@ -30,3 +30,10 @@ Content-Type: application/json
   "email": "email3@email.com",
   "password": "Frenchie1233@"
 }
+
+###
+POST http://localhost:8000/api/artists/1/favorite/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDA1MjMyOH0.q_ddAm0Mz-C0rVOcbh_oIccc1BX63eO3yiuVvE4FjJs
+
+###
+GET http://localhost:8000/api/auth/users/3/
