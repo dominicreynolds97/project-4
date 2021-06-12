@@ -50,65 +50,20 @@ class ReleaseDetailView(DetailView):
         self.serial = ReleaseSerializer
 
 class ArtistFavoriteView(APIView):
-    # def __init__(self):
-    #     self.model = Artist
-    #     self.serial = PopulatedArtistSerializer
 
     permission_classes = (IsAuthenticated, )
-    # def __init__(self):
-    #     self.model = Artist
-    #     self.serial = PopulatedArtistSerializer
-
-    def post(self, request, pk):
-        print('here')
-        try:
-            artist = Artist.objects.get(pk=pk)
-            if request.user in artist.favorited_by.all():
-                artist.favorited_by.remove(request.user.id)
-            else:
-                artist.favorited_by.add(request.user.id)
-            artist.save()
-            serialized_artist = PopulatedArtistSerializer(artist)
-            return Response(serialized_artist.data, status=status.HTTP_202_ACCEPTED)
-        except Artist.DoesNotExist:
-            raise NotFound()
+    def __init__(self):
+        self.model = Artist
+        self.serial = PopulatedArtistSerializer
 
 class ReleaseFavoriteView(APIView):
-    # permission_classes = (IsAuthenticated, )
-    # def __init__(self):
-    #     self.model = Release
-    #     self.serial = PopulatedReleaseSerializer
     permission_classes = (IsAuthenticated, )
-
-    def post(self, request, pk):
-        try:
-            release = Release.objects.get(pk=pk)
-            if request.user in release.favorited_by.all():
-                release.favorited_by.remove(request.user.id)
-            else:
-                release.favorited_by.add(request.user.id)
-            release.save()
-            serialized_release = PopulatedReleaseSerializer(release)
-            return Response(serialized_release.data, status=status.HTTP_202_ACCEPTED)
-        except Artist.DoesNotExist:
-            raise NotFound()
+    def __init__(self):
+        self.model = Release
+        self.serial = PopulatedReleaseSerializer
 
 class TrackFavoriteView(APIView):
     permission_classes = (IsAuthenticated, )
     def __init__(self):
         self.model = Track
         self.serial = PopulatedTrackSerializer
-    # permission_classes = (IsAuthenticated, )
-
-    # def post(self, request, pk):
-    #     try:
-    #         track = Track.objects.get(pk=pk)
-    #         if request.user in track.favorited_by.all():
-    #             track.favorited_by.remove(request.user.id)
-    #         else:
-    #             track.favorited_by.add(request.user.id)
-    #         track.save()
-    #         serialized_track = PopulatedTrackSerializer(track)
-    #         return Response(serialized_track.data, status=status.HTTP_202_ACCEPTED)
-    #     except Artist.DoesNotExist:
-    #         raise NotFound()
