@@ -18,6 +18,9 @@ class Venue(models.Model):
         blank=True
     )
 
+    def __str__(self):
+        return f'{self.name}'
+
 class Gig(models.Model):
     name = CharField(max_length=150)
     description = TextField(max_length=500)
@@ -28,7 +31,12 @@ class Gig(models.Model):
         related_name='gigs',
         on_delete=CASCADE
     )
-    artists = ManyToManyField(
+    headliner = ForeignKey(
+        Artist,
+        related_name='gig_headliner',
+        on_delete=CASCADE
+    )
+    support_artists = ManyToManyField(
         Artist,
         related_name='gigs',
         blank=True
@@ -38,3 +46,6 @@ class Gig(models.Model):
         related_name='favorite_gigs',
         blank=True
     )
+
+    def __str__(self):
+        return f'{self.name}'

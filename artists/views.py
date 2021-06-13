@@ -49,20 +49,20 @@ class ReleaseDetailView(DetailView):
         self.populated_serial = PopulatedReleaseSerializer
         self.serial = ReleaseSerializer
 
-class ArtistFavoriteView(APIView):
+class ArtistFavoriteView(FavoriteView):
 
     permission_classes = (IsAuthenticated, )
     def __init__(self):
         self.model = Artist
         self.serial = PopulatedArtistSerializer
 
-class ReleaseFavoriteView(APIView):
+class ReleaseFavoriteView(FavoriteView):
     permission_classes = (IsAuthenticated, )
     def __init__(self):
         self.model = Release
         self.serial = PopulatedReleaseSerializer
 
-class TrackFavoriteView(APIView):
+class TrackFavoriteView(FavoriteView):
     permission_classes = (IsAuthenticated, )
     def __init__(self):
         self.model = Track

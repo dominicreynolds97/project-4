@@ -4,19 +4,20 @@ from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
 from rest_framework import status
 from .models import Gig, Venue
-from .serializers import GigSerializer,  VenueSerializer
+from .serializers import GigSerializer, PopulatedGigSerializer,  VenueSerializer
 from hooks.views import ListView, DetailView
 # Create your views here.
 
 class GigListView(ListView):
     def __init__(self):
         self.model = Gig
-        self.serial = GigSerializer
+        self.serial = PopulatedGigSerializer
 
 class GigDetailView(DetailView):
     def __init__(self):
         self.model = Gig
         self.serial = GigSerializer
+        self.populated_serial = PopulatedGigSerializer
 
 class VenueListView(ListView):
     def __init__(self):

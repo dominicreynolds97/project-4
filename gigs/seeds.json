@@ -1,0 +1,11 @@
+[
+{
+  "model": "gigs.venue",
+  "pk": 1,
+  "fields": {
+    "name": "The Black Box",
+    "description": "Performance and arts venue with music, theatre, comedy, film, visual art, circus, cabaret and bar.",
+    "location": "18-22 Hill St, \r\nBelfast,\r\nBT1 2LA",
+    "favorited_by": []
+  }
+}

@@ -3,28 +3,56 @@
   "model": "artists.genre",
   "pk": 1,
   "fields": {
-    "name": "Rock"
+    "name": "Rock",
+    "favorited_by": []
   }
 },
 {
   "model": "artists.genre",
   "pk": 2,
   "fields": {
-    "name": "Punk"
+    "name": "Punk",
+    "favorited_by": []
   }
 },
 {
   "model": "artists.genre",
   "pk": 3,
   "fields": {
-    "name": "Hard Rock"
+    "name": "Hard Rock",
+    "favorited_by": []
   }
 },
 {
   "model": "artists.genre",
   "pk": 4,
   "fields": {
-    "name": "Metal"
+    "name": "Metal",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 5,
+  "fields": {
+    "name": "Blues",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 6,
+  "fields": {
+    "name": "Funk",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 7,
+  "fields": {
+    "name": "Acoustic",
+    "favorited_by": []
   }
 },
 {
@@ -76,6 +104,68 @@
   }
 },
 {
+  "model": "artists.musician",
+  "pk": 1,
+  "fields": {
+    "name": "Aaron Reeve",
+    "avatar": "url",
+    "user": null,
+    "instruments": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "artists.musician",
+  "pk": 2,
+  "fields": {
+    "name": "Simon Harte",
+    "avatar": "url",
+    "user": null,
+    "instruments": [
+      2
+    ]
+  }
+},
+{
+  "model": "artists.musician",
+  "pk": 3,
+  "fields": {
+    "name": "Adam Woods",
+    "avatar": "url",
+    "user": null,
+    "instruments": [
+      3
+    ]
+  }
+},
+{
+  "model": "artists.musician",
+  "pk": 4,
+  "fields": {
+    "name": "Chris Millar",
+    "avatar": "url",
+    "user": null,
+    "instruments": [
+      4
+    ]
+  }
+},
+{
+  "model": "artists.musician",
+  "pk": 5,
+  "fields": {
+    "name": "Scott Mac",
+    "avatar": "url",
+    "user": null,
+    "instruments": [
+      1,
+      2
+    ]
+  }
+},
+{
   "model": "artists.artist",
   "pk": 1,
   "fields": {
@@ -92,7 +182,73 @@
       4
     ],
     "links": [],
-    "musicians": []
+    "musicians": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 3,
+  "fields": {
+    "name": "Romeo Indigo Romeo",
+    "description": "Formed in 2016 after a few disgruntled retail workers discovered a mutual love of loud guitars, Romeo Indigo Romeo are a powerhouse rock band, \r\nable to blend the loud with the soft and the clean with the dirty. Often flirting with metal and blues, this Belfast-based 4 piece\r\nalways put on a solid show, drawing influence from Wolfmother, Guns n Roses, Clutch and others.",
+    "year_formed": 2016,
+    "logo": "https://static.wixstatic.com/media/3e947d_049f0b13d18242998497842021a9c5bf~mv2_d_1200_1200_s_2.jpg/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/3e947d_049f0b13d18242998497842021a9c5bf~mv2_d_1200_1200_s_2.jpg",
+    "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/52323643_1971972529765123_5379226459820785664_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=UGcd0bMCO54AX-i-BI5&_nc_ht=scontent-man2-1.xx&oh=59879ce978d98cb0079efed8f644916d&oe=60C04707",
+    "location": "Bellfast",
+    "genres": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "links": [],
+    "musicians": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 4,
+  "fields": {
+    "name": "Vallium",
+    "description": "Rock Funk band from Belfast",
+    "year_formed": 2016,
+    "logo": "https://i.scdn.co/image/ab67616d0000b2730f0cf94d2f83323c18a2ffd6",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b2730f0cf94d2f83323c18a2ffd6",
+    "location": "Belfast",
+    "genres": [
+      1,
+      6
+    ],
+    "links": [],
+    "musicians": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 5,
+  "fields": {
+    "name": "Scott Mac",
+    "description": "Singer/songwriter based in Belfast, Northern Ireland.",
+    "year_formed": 0,
+    "logo": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/193209477_236220214912228_3207151856626319197_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=0eRgx9igcJEAX_-gqdw&_nc_ht=scontent-man2-1.xx&oh=757d281549358768446a11825a311db0&oe=60CA3B9B",
+    "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/193209477_236220214912228_3207151856626319197_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=0eRgx9igcJEAX_-gqdw&_nc_ht=scontent-man2-1.xx&oh=757d281549358768446a11825a311db0&oe=60CA3B9B",
+    "location": "Belfast",
+    "genres": [
+      7
+    ],
+    "links": [],
+    "musicians": [
+      5
+    ],
+    "favorited_by": []
   }
 },
 {
@@ -102,14 +258,66 @@
     "name": "Stop and Stare",
     "type": "EP",
     "release_date": "2021-02-12",
-    "artwork": "url",
+    "artwork": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/148937385_242049757420213_7907064049649113487_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=-OV5EDXgEUwAX-r8L34&_nc_ht=scontent-man2-1.xx&oh=e400e32e217471e91f40bb5ced3bae42&oe=60C98FBD",
     "artist": 1,
     "genres": [
       1,
       2,
       3
     ],
-    "links": []
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 2,
+  "fields": {
+    "name": "The Romeo EP",
+    "type": "EP",
+    "release_date": "2019-01-01",
+    "artwork": "https://f4.bcbits.com/img/a3394700253_10.jpg",
+    "artist": 3,
+    "genres": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 3,
+  "fields": {
+    "name": "Lost Cause",
+    "type": "Single",
+    "release_date": "2017-01-01",
+    "artwork": "https://f4.bcbits.com/img/a4292475879_2.jpg",
+    "artist": 3,
+    "genres": [
+      1
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 4,
+  "fields": {
+    "name": "Whiskey",
+    "type": "Single",
+    "release_date": "2018-01-02",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2734e2e6a677242b3b520998389",
+    "artist": 3,
+    "genres": [
+      1
+    ],
+    "links": [],
+    "favorited_by": []
   }
 },
 {
@@ -125,7 +333,8 @@
       2,
       3
     ],
-    "links": []
+    "links": [],
+    "favorited_by": []
   }
 },
 {
@@ -140,7 +349,8 @@
       1,
       3
     ],
-    "links": []
+    "links": [],
+    "favorited_by": []
   }
 },
 {
@@ -154,7 +364,109 @@
     "genres": [],
     "links": [
       2
-    ]
+    ],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 5,
+  "fields": {
+    "name": "i",
+    "length": 282,
+    "artist": 3,
+    "release": 2,
+    "genres": [
+      1
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 6,
+  "fields": {
+    "name": "The Message",
+    "length": 323,
+    "artist": 3,
+    "release": 2,
+    "genres": [
+      1
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 7,
+  "fields": {
+    "name": "Spooky Scary, Spooky Scary",
+    "length": 334,
+    "artist": 3,
+    "release": 2,
+    "genres": [
+      1
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 8,
+  "fields": {
+    "name": "Wolf",
+    "length": 217,
+    "artist": 3,
+    "release": 2,
+    "genres": [
+      1
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 9,
+  "fields": {
+    "name": "That's What You Get",
+    "length": 225,
+    "artist": 3,
+    "release": 2,
+    "genres": [
+      1
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 10,
+  "fields": {
+    "name": "Lost Cause",
+    "length": 205,
+    "artist": 3,
+    "release": 3,
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 11,
+  "fields": {
+    "name": "Whiskey",
+    "length": 326,
+    "artist": 3,
+    "release": 4,
+    "genres": [],
+    "links": [],
+    "favorited_by": []
   }
 }
 ]
