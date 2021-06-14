@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import (
-    ArtistListView,  
+    ArtistListView,
     TrackFavoriteView, 
     TrackListView, 
     ReleasesListView, 
@@ -8,7 +8,8 @@ from .views import (
     TrackDetailView, 
     ReleaseDetailView,
     ReleaseFavoriteView,
-    ArtistFavoriteView
+    ArtistFavoriteView,
+    GenreListView
 )
 
 urlpatterns = [
@@ -21,4 +22,5 @@ urlpatterns = [
     path('releases/', ReleasesListView.as_view()),
     path('releases/<int:pk>/', ReleaseDetailView.as_view()),
     path('releases/<int:pk>/favorite/', ReleaseFavoriteView.as_view()),
+    path('genres/', GenreListView.as_view()),
 ]

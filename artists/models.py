@@ -113,15 +113,16 @@ class Release(models.Model):
 class Track(models.Model):
     name = models.CharField(max_length=100)
     length = models.IntegerField()
+    track_index = models.IntegerField()
     artist = models.ForeignKey(
         Artist,
         related_name='tracks',
         on_delete=CASCADE
     )
-    release = models.ForeignKey(
+    release = models.ManyToManyField(
         Release,
         related_name='tracks',
-        on_delete=CASCADE
+        blank=True
     )
     genres = models.ManyToManyField(
         Genre, 

@@ -4,9 +4,10 @@ from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
-from .models import Track, Artist, Release
+from .models import Genre, Track, Artist, Release
 from .serializers import (
-    ArtistSerializer,  
+    ArtistSerializer,
+    GenreSerializer,  
     ReleaseSerializer, 
     TrackSerializer, 
     PopulatedArtistSerializer,
@@ -67,3 +68,8 @@ class TrackFavoriteView(FavoriteView):
     def __init__(self):
         self.model = Track
         self.serial = PopulatedTrackSerializer
+
+class GenreListView(ListView):
+    def __init__(self):
+        self.model = Genre
+        self.serial = GenreSerializer
