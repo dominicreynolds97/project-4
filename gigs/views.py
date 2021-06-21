@@ -13,6 +13,11 @@ class GigListView(ListView):
         self.model = Gig
         self.serial = PopulatedGigSerializer
 
+class GigPostView(ListView):
+    def __init__(self):
+        self.model = Gig
+        self.serial = GigSerializer
+
 class GigDetailView(DetailView):
     def __init__(self):
         self.model = Gig
