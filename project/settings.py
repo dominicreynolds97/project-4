@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import django_on_heroku
 from pathlib import Path
 from dotenv import load_dotenv
 import dj_database_url
@@ -161,3 +162,5 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 AUTH_USER_MODEL = 'jwt_auth.User'
+
+django_on_heroku.settings(locals())
