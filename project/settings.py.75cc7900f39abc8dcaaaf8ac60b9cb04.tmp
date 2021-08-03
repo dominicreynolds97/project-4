@@ -91,10 +91,10 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {}
 if str(os.getenv('ENVIRONMENT')) == 'development':
     DATABASES['default'] = {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'local-music-network-db',
-        'HOST': 'localhost',
-        'PORT': 5432
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'local-music-network-db',
+            'HOST': 'localhost',
+            'PORT': 5432
     }
 else:
     DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
