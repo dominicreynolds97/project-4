@@ -8,4 +8,41 @@
     "location": "18-22 Hill St, \r\nBelfast,\r\nBT1 2LA",
     "favorited_by": []
   }
+},
+{
+  "model": "gigs.venue",
+  "pk": 2,
+  "fields": {
+    "name": "Voodoo",
+    "description": "Lively, vivid red venue for alternative live music and club nights, plus Deep South-inspired food.",
+    "location": "11A Fountain St, Belfast BT1 5EA",
+    "favorited_by": []
+  }
+},
+{
+  "model": "gigs.venue",
+  "pk": 3,
+  "fields": {
+    "name": "Oh Yeah Music Centrre",
+    "description": "Creative hub featuring a live music venue, cafe & history exhibits, along with a recording studio.",
+    "location": "15-21 Gordon St, Belfast BT1 2LG",
+    "favorited_by": []
+  }
+},
+{
+  "model": "gigs.gig",
+  "pk": 1,
+  "fields": {
+    "name": "Scott Mac EP Launch",
+    "description": "Gig",
+    "date_time": "2021-09-23T18:00:00Z",
+    "price": "10.00",
+    "venue": 1,
+    "headliner": 5,
+    "support_artists": [
+      4
+    ],
+    "favorited_by": []
+  }
 }
+]

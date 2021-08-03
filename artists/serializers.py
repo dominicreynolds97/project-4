@@ -34,7 +34,7 @@ class TrackSerializer(serializers.ModelSerializer):
     class Meta:
         model = Track
         fields = '__all__'
-    artist = ArtistSerializer()
+    # artist = ArtistSerializer()
 
 class PopulatedArtistSerializer(ArtistSerializer):
     genres = GenreSerializer(many=True)

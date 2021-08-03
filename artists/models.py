@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models.deletion import CASCADE
-from django.db.models.fields import CharField
-from django.db.models.fields.related import ManyToManyField
+from django.db.models.fields import CharField, DateTimeField
+from django.db.models.fields.related import ForeignKey, ManyToManyField
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
@@ -77,6 +77,13 @@ class Artist(models.Model):
         related_name='favorite_artists',
         blank=True
     )
+    owner = ForeignKey(
+        User,
+        related_name='artist_owner',
+        on_delete=CASCADE,
+        null=True,
+        default=1
+    )
 
     def __str__(self):
         return f'{self.name}'
@@ -105,6 +112,13 @@ class Release(models.Model):
         User,
         related_name='favorite_releases',
         blank=True
+    )
+    owner = ForeignKey(
+        User,
+        related_name='release_owner',
+        on_delete=CASCADE,
+        null=True,
+        default=1
     )
 
     def __str__(self):
@@ -138,6 +152,13 @@ class Track(models.Model):
         User,
         related_name='favorite_tracks',
         blank=True
+    )
+    owner = ForeignKey(
+        User,
+        related_name='track_owner',
+        on_delete=CASCADE,
+        null=True,
+        default=1
     )
 
     def __str__(self):

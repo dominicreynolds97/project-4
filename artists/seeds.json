@@ -56,6 +56,78 @@
   }
 },
 {
+  "model": "artists.genre",
+  "pk": 8,
+  "fields": {
+    "name": "Progressive Metal",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 9,
+  "fields": {
+    "name": "Death Metal",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 10,
+  "fields": {
+    "name": "Pop",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 11,
+  "fields": {
+    "name": "Synth Pop",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 12,
+  "fields": {
+    "name": "Indie Rock",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 13,
+  "fields": {
+    "name": "Alt Rock",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 15,
+  "fields": {
+    "name": "Black Metal",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 16,
+  "fields": {
+    "name": "Techno",
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.genre",
+  "pk": 17,
+  "fields": {
+    "name": "pastrt rock",
+    "favorited_by": []
+  }
+},
+{
   "model": "artists.link",
   "pk": 1,
   "fields": {
@@ -183,7 +255,10 @@
     ],
     "links": [],
     "musicians": [],
-    "favorited_by": []
+    "favorited_by": [
+      2,
+      3
+    ]
   }
 },
 {
@@ -195,7 +270,7 @@
     "year_formed": 2016,
     "logo": "https://static.wixstatic.com/media/3e947d_049f0b13d18242998497842021a9c5bf~mv2_d_1200_1200_s_2.jpg/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/3e947d_049f0b13d18242998497842021a9c5bf~mv2_d_1200_1200_s_2.jpg",
     "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/52323643_1971972529765123_5379226459820785664_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=UGcd0bMCO54AX-i-BI5&_nc_ht=scontent-man2-1.xx&oh=59879ce978d98cb0079efed8f644916d&oe=60C04707",
-    "location": "Bellfast",
+    "location": "Belfast",
     "genres": [
       1,
       3,
@@ -209,14 +284,17 @@
       3,
       4
     ],
-    "favorited_by": []
+    "favorited_by": [
+      2,
+      3
+    ]
   }
 },
 {
   "model": "artists.artist",
   "pk": 4,
   "fields": {
-    "name": "Vallium",
+    "name": "Valium",
     "description": "Rock Funk band from Belfast",
     "year_formed": 2016,
     "logo": "https://i.scdn.co/image/ab67616d0000b2730f0cf94d2f83323c18a2ffd6",
@@ -228,7 +306,10 @@
     ],
     "links": [],
     "musicians": [],
-    "favorited_by": []
+    "favorited_by": [
+      2,
+      3
+    ]
   }
 },
 {
@@ -238,7 +319,7 @@
     "name": "Scott Mac",
     "description": "Singer/songwriter based in Belfast, Northern Ireland.",
     "year_formed": 0,
-    "logo": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/193209477_236220214912228_3207151856626319197_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=0eRgx9igcJEAX_-gqdw&_nc_ht=scontent-man2-1.xx&oh=757d281549358768446a11825a311db0&oe=60CA3B9B",
+    "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624307852/local_music_network_images/zpymufx0fxp308ypmigk.jpg",
     "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/193209477_236220214912228_3207151856626319197_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=0eRgx9igcJEAX_-gqdw&_nc_ht=scontent-man2-1.xx&oh=757d281549358768446a11825a311db0&oe=60CA3B9B",
     "location": "Belfast",
     "genres": [
@@ -248,7 +329,124 @@
     "musicians": [
       5
     ],
-    "favorited_by": []
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 6,
+  "fields": {
+    "name": "Road Ahead Closed",
+    "description": "Formed in 2020 by Dominic Reynolds, Road Ahead Closed are a rock band that push genre boundaries and play songs that you'll want to listen to again and again",
+    "year_formed": 2020,
+    "logo": "https://i1.sndcdn.com/avatars-000357757994-wdfinn-t500x500.jpg",
+    "cover_image": "https://i1.sndcdn.com/avatars-000357757994-wdfinn-t500x500.jpg",
+    "location": "Belfast",
+    "genres": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "links": [],
+    "musicians": [],
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 7,
+  "fields": {
+    "name": "Lock Horns",
+    "description": "Progressive Metal Band from Belfast, Northern Ireland.",
+    "year_formed": 2016,
+    "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624307901/local_music_network_images/l36ruerraxrioabeicrd.jpg",
+    "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/156808451_115604087244623_528108644766235233_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=e3f864&_nc_ohc=AzCIPdOhQSEAX-PlN1g&_nc_ht=scontent-man2-1.xx&oh=5c8f126be70d1eceba8a24762633e74a&oe=60CC559C",
+    "location": "Belfast",
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "musicians": [],
+    "favorited_by": [
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 8,
+  "fields": {
+    "name": "Brand New Friend",
+    "description": "Band",
+    "year_formed": 2016,
+    "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624307935/local_music_network_images/e8igl1lwgyuorrakfwft.jpg",
+    "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/198781487_2953309404996484_6034807149684194636_n.png?_nc_cat=105&ccb=1-3&_nc_sid=e3f864&_nc_ohc=DC3tgwi6wU4AX-Cv4KL&tn=KKMKzz4FAfdLLzpn&_nc_ht=scontent-man2-1.xx&oh=5c54070fd77668c515fe511b8e60df5b&oe=60CD0BAF",
+    "location": "Belfast",
+    "genres": [
+      1,
+      11,
+      12
+    ],
+    "links": [],
+    "musicians": [],
+    "favorited_by": [
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 9,
+  "fields": {
+    "name": "Fake Flirtations",
+    "description": "Belfast Alt Rock Band, Great Songs",
+    "year_formed": 2017,
+    "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624307467/local_music_network_images/hrbumyeawzwcqrwucbmi.png",
+    "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/101550803_1634836603354411_8654659590236930048_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=MjXGob-yzUEAX8FAD8C&_nc_ht=scontent-man2-1.xx&oh=fa2b83830b4c45998156ddf5c673a061&oe=60BF7976",
+    "location": "Belfast",
+    "genres": [
+      1,
+      12,
+      5
+    ],
+    "links": [],
+    "musicians": [],
+    "favorited_by": [
+      3
+    ]
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 10,
+  "fields": {
+    "name": "Ben Traill",
+    "description": "Ben",
+    "year_formed": 1996,
+    "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624351084/local_music_network_images/gap54aysqlke2zappm81.jpg",
+    "cover_image": "URL",
+    "location": "Derry",
+    "genres": [
+      10,
+      7
+    ],
+    "links": [],
+    "musicians": [],
+    "favorited_by": [
+      3
+    ]
   }
 },
 {
@@ -258,7 +456,7 @@
     "name": "Stop and Stare",
     "type": "EP",
     "release_date": "2021-02-12",
-    "artwork": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/148937385_242049757420213_7907064049649113487_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=-OV5EDXgEUwAX-r8L34&_nc_ht=scontent-man2-1.xx&oh=e400e32e217471e91f40bb5ced3bae42&oe=60C98FBD",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273c53bc5d4ae4931f3bf23cff7",
     "artist": 1,
     "genres": [
       1,
@@ -266,7 +464,10 @@
       3
     ],
     "links": [],
-    "favorited_by": []
+    "favorited_by": [
+      2,
+      3
+    ]
   }
 },
 {
@@ -285,7 +486,10 @@
       5
     ],
     "links": [],
-    "favorited_by": []
+    "favorited_by": [
+      2,
+      3
+    ]
   }
 },
 {
@@ -301,7 +505,10 @@
       1
     ],
     "links": [],
-    "favorited_by": []
+    "favorited_by": [
+      2,
+      3
+    ]
   }
 },
 {
@@ -317,7 +524,331 @@
       1
     ],
     "links": [],
-    "favorited_by": []
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 5,
+  "fields": {
+    "name": "Spooky Scary, Spooky Scary",
+    "type": "Single",
+    "release_date": "2019-01-01",
+    "artwork": "https://m.media-amazon.com/images/I/911UGZNdU1L._SS500_.jpg",
+    "artist": 3,
+    "genres": [],
+    "links": [],
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 6,
+  "fields": {
+    "name": "Separation",
+    "type": "Single",
+    "release_date": "2021-01-29",
+    "artwork": "https://i1.sndcdn.com/avatars-rIEVSUhjZtMlnxF7-2uVCZQ-t240x240.jpg",
+    "artist": 1,
+    "genres": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "links": [],
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 7,
+  "fields": {
+    "name": "Molon Labe",
+    "type": "Album",
+    "release_date": "2018-01-02",
+    "artwork": "https://m.media-amazon.com/images/I/A1pY9fOToxL._SS500_.jpg",
+    "artist": 7,
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 8,
+  "fields": {
+    "name": "Stagnant",
+    "type": "Single",
+    "release_date": "2018-01-02",
+    "artwork": "https://direct.rhapsody.com/imageserver/images/alb.306791582/500x500.jpg",
+    "artist": 7,
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": [
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 9,
+  "fields": {
+    "name": "Wendigo",
+    "type": "Single",
+    "release_date": "2016-01-01",
+    "artwork": "https://m.media-amazon.com/images/I/81VghUtAKcL._SS500_.jpg",
+    "artist": 7,
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": [
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 10,
+  "fields": {
+    "name": "American Wives",
+    "type": "EP",
+    "release_date": "2016-01-01",
+    "artwork": "https://m.media-amazon.com/images/I/81h8m+7JaeL._SS500_.jpg",
+    "artist": 8,
+    "genres": [],
+    "links": [],
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 11,
+  "fields": {
+    "name": "Your Friends Hate Me",
+    "type": "Single",
+    "release_date": "2017-01-01",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273191f8793ddaebf55d8f9254e",
+    "artist": 8,
+    "genres": [
+      11,
+      12
+    ],
+    "links": [],
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 12,
+  "fields": {
+    "name": "I Hate It When You Have To Go",
+    "type": "Single",
+    "release_date": "2017-02-02",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273991834ddf035dce48c3751ef",
+    "artist": 8,
+    "genres": [
+      11,
+      12
+    ],
+    "links": [],
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 13,
+  "fields": {
+    "name": "Seatbelts for Areoplanes",
+    "type": "Album",
+    "release_date": "2018-01-02",
+    "artwork": "https://f4.bcbits.com/img/0020823400_10.jpg",
+    "artist": 8,
+    "genres": [
+      11,
+      12
+    ],
+    "links": [],
+    "favorited_by": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 14,
+  "fields": {
+    "name": "Why Are You so Tired",
+    "type": "Single",
+    "release_date": "2018-01-02",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273aaf7f5b80c4711cb1327507b",
+    "artist": 8,
+    "genres": [
+      12
+    ],
+    "links": [],
+    "favorited_by": [
+      2
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 15,
+  "fields": {
+    "name": "I Was an Astronaut",
+    "type": "EP",
+    "release_date": "2019-01-02",
+    "artwork": "https://i1.sndcdn.com/artworks-000472657149-ye5hfp-t500x500.jpg",
+    "artist": 8,
+    "genres": [
+      12
+    ],
+    "links": [],
+    "favorited_by": [
+      2
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 16,
+  "fields": {
+    "name": "The Letter A",
+    "type": "Single",
+    "release_date": "2019-01-02",
+    "artwork": "https://musicglue-images-prod.global.ssl.fastly.net/xtra-mile-recordings/product/brand-new-friend-the-letter-a-single?u=aHR0cHM6Ly9tdXNpY2dsdWUtdXNlci1hcHAtcC00LXAuczMuYW1hem9uYXdzLmNvbS9vcmlnaW5hbHMvMzNjNWYzMzItYTc2Zi00NzAzLWFiMjUtMmU3Y2Q0N2RkYWY2&mode=contain&width=600&v=2",
+    "artist": 8,
+    "genres": [
+      12
+    ],
+    "links": [],
+    "favorited_by": [
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 17,
+  "fields": {
+    "name": "The Letter A (Piano Version)",
+    "type": "Single",
+    "release_date": "2019-01-02",
+    "artwork": "https://direct.rhapsody.com/imageserver/images/alb.429243818/500x500.jpg",
+    "artist": 8,
+    "genres": [],
+    "links": [],
+    "favorited_by": [
+      2
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 18,
+  "fields": {
+    "name": "Nothing Stays the Same",
+    "type": "Single",
+    "release_date": "2020-01-01",
+    "artwork": "https://i.kfs.io/album/global/85901391,0v1/fit/500x500.jpg",
+    "artist": 8,
+    "genres": [],
+    "links": [],
+    "favorited_by": [
+      2
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 19,
+  "fields": {
+    "name": "Stop the Days",
+    "type": "Single",
+    "release_date": "2020-01-01",
+    "artwork": "https://i.ytimg.com/vi/vr6cJBvvkog/maxresdefault.jpg",
+    "artist": 8,
+    "genres": [
+      12
+    ],
+    "links": [],
+    "favorited_by": [
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 20,
+  "fields": {
+    "name": "Happy Xmas (War Is Over)",
+    "type": "Single",
+    "release_date": "2020-07-01",
+    "artwork": "https://img.discogs.com/yHrGmuaA02sOdIYn7bWWGaESlrI=/fit-in/500x500/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-16426938-1607686348-3660.jpeg.jpg",
+    "artist": 8,
+    "genres": [
+      10
+    ],
+    "links": [],
+    "favorited_by": [
+      2
+    ]
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 21,
+  "fields": {
+    "name": "A Cure for Living",
+    "type": "Album",
+    "release_date": "2020-07-01",
+    "artwork": "https://f4.bcbits.com/img/a0785049422_10.jpg",
+    "artist": 8,
+    "genres": [
+      1,
+      12
+    ],
+    "links": [],
+    "favorited_by": [
+      2,
+      3
+    ]
   }
 },
 {
@@ -326,8 +857,11 @@
   "fields": {
     "name": "Forgotten Son",
     "length": 210,
+    "track_index": 0,
     "artist": 1,
-    "release": 1,
+    "release": [
+      1
+    ],
     "genres": [
       1,
       2,
@@ -343,8 +877,11 @@
   "fields": {
     "name": "Above",
     "length": 252,
+    "track_index": 0,
     "artist": 1,
-    "release": 1,
+    "release": [
+      1
+    ],
     "genres": [
       1,
       3
@@ -359,9 +896,18 @@
   "fields": {
     "name": "Separation",
     "length": 166,
+    "track_index": 0,
     "artist": 1,
-    "release": 1,
-    "genres": [],
+    "release": [
+      6,
+      1
+    ],
+    "genres": [
+      1,
+      2,
+      3,
+      4
+    ],
     "links": [
       2
     ],
@@ -374,8 +920,11 @@
   "fields": {
     "name": "i",
     "length": 282,
+    "track_index": 0,
     "artist": 3,
-    "release": 2,
+    "release": [
+      2
+    ],
     "genres": [
       1
     ],
@@ -389,8 +938,11 @@
   "fields": {
     "name": "The Message",
     "length": 323,
+    "track_index": 1,
     "artist": 3,
-    "release": 2,
+    "release": [
+      2
+    ],
     "genres": [
       1
     ],
@@ -404,8 +956,12 @@
   "fields": {
     "name": "Spooky Scary, Spooky Scary",
     "length": 334,
+    "track_index": 2,
     "artist": 3,
-    "release": 2,
+    "release": [
+      5,
+      2
+    ],
     "genres": [
       1
     ],
@@ -419,8 +975,11 @@
   "fields": {
     "name": "Wolf",
     "length": 217,
+    "track_index": 3,
     "artist": 3,
-    "release": 2,
+    "release": [
+      2
+    ],
     "genres": [
       1
     ],
@@ -434,8 +993,11 @@
   "fields": {
     "name": "That's What You Get",
     "length": 225,
+    "track_index": 4,
     "artist": 3,
-    "release": 2,
+    "release": [
+      2
+    ],
     "genres": [
       1
     ],
@@ -449,8 +1011,11 @@
   "fields": {
     "name": "Lost Cause",
     "length": 205,
+    "track_index": 0,
     "artist": 3,
-    "release": 3,
+    "release": [
+      3
+    ],
     "genres": [],
     "links": [],
     "favorited_by": []
@@ -462,8 +1027,631 @@
   "fields": {
     "name": "Whiskey",
     "length": 326,
+    "track_index": 0,
     "artist": 3,
-    "release": 4,
+    "release": [
+      4
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 12,
+  "fields": {
+    "name": "Stagnant",
+    "length": 258,
+    "track_index": 0,
+    "artist": 7,
+    "release": [
+      7,
+      8
+    ],
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 13,
+  "fields": {
+    "name": "Molon Labe",
+    "length": 262,
+    "track_index": 1,
+    "artist": 7,
+    "release": [
+      7
+    ],
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 14,
+  "fields": {
+    "name": "LOW",
+    "length": 273,
+    "track_index": 2,
+    "artist": 7,
+    "release": [
+      7
+    ],
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 15,
+  "fields": {
+    "name": "Blood and Oil",
+    "length": 272,
+    "track_index": 3,
+    "artist": 7,
+    "release": [
+      7
+    ],
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 16,
+  "fields": {
+    "name": "Machines",
+    "length": 236,
+    "track_index": 4,
+    "artist": 7,
+    "release": [
+      7
+    ],
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 17,
+  "fields": {
+    "name": "Pages",
+    "length": 294,
+    "track_index": 5,
+    "artist": 7,
+    "release": [
+      7
+    ],
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 18,
+  "fields": {
+    "name": "Wendigo",
+    "length": 227,
+    "track_index": 6,
+    "artist": 7,
+    "release": [
+      7,
+      9
+    ],
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 19,
+  "fields": {
+    "name": "Quietus",
+    "length": 448,
+    "track_index": 7,
+    "artist": 7,
+    "release": [
+      7
+    ],
+    "genres": [
+      8,
+      9,
+      4
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 20,
+  "fields": {
+    "name": "American Wives",
+    "length": 108,
+    "track_index": 0,
+    "artist": 8,
+    "release": [
+      10
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 21,
+  "fields": {
+    "name": "I Was an Astronaut",
+    "length": 168,
+    "track_index": 1,
+    "artist": 8,
+    "release": [
+      10
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 22,
+  "fields": {
+    "name": "Settle Down",
+    "length": 191,
+    "track_index": 2,
+    "artist": 8,
+    "release": [
+      10
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 23,
+  "fields": {
+    "name": "I Love You, Goodbye",
+    "length": 148,
+    "track_index": 3,
+    "artist": 8,
+    "release": [
+      10
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 24,
+  "fields": {
+    "name": "A&E",
+    "length": 144,
+    "track_index": 4,
+    "artist": 8,
+    "release": [
+      10
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 25,
+  "fields": {
+    "name": "Your Friends Hate Me",
+    "length": 161,
+    "track_index": 0,
+    "artist": 8,
+    "release": [
+      11
+    ],
+    "genres": [
+      12
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 26,
+  "fields": {
+    "name": "I Hate It When You Have To Go",
+    "length": 148,
+    "track_index": 7,
+    "artist": 8,
+    "release": [
+      12,
+      13
+    ],
+    "genres": [
+      12
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 27,
+  "fields": {
+    "name": "Mediocre at Best",
+    "length": 127,
+    "track_index": 0,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 28,
+  "fields": {
+    "name": "Seatbelts for Aeroplanes",
+    "length": 163,
+    "track_index": 1,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 29,
+  "fields": {
+    "name": "I Was an Astronaut",
+    "length": 152,
+    "track_index": 2,
+    "artist": 8,
+    "release": [
+      13,
+      15
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 30,
+  "fields": {
+    "name": "Milk Chews",
+    "length": 202,
+    "track_index": 3,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 31,
+  "fields": {
+    "name": "Slow",
+    "length": 201,
+    "track_index": 4,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 32,
+  "fields": {
+    "name": "Why Are You so Tired",
+    "length": 165,
+    "track_index": 5,
+    "artist": 8,
+    "release": [
+      13,
+      14
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 33,
+  "fields": {
+    "name": "Sleep on My Floor",
+    "length": 161,
+    "track_index": 6,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 34,
+  "fields": {
+    "name": "Girl",
+    "length": 119,
+    "track_index": 8,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 35,
+  "fields": {
+    "name": "A&E",
+    "length": 153,
+    "track_index": 9,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 36,
+  "fields": {
+    "name": "I Love You, Goodbye",
+    "length": 133,
+    "track_index": 10,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 37,
+  "fields": {
+    "name": "The Blame",
+    "length": 198,
+    "track_index": 11,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 38,
+  "fields": {
+    "name": "Cold",
+    "length": 218,
+    "track_index": 12,
+    "artist": 8,
+    "release": [
+      13
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 39,
+  "fields": {
+    "name": "The Letter A",
+    "length": 170,
+    "track_index": 1,
+    "artist": 8,
+    "release": [
+      16,
+      21
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 40,
+  "fields": {
+    "name": "The Letter A - Piano Version",
+    "length": 230,
+    "track_index": 0,
+    "artist": 8,
+    "release": [
+      17
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 41,
+  "fields": {
+    "name": "She Always Comes up Smiling",
+    "length": 222,
+    "track_index": 0,
+    "artist": 8,
+    "release": [
+      21
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 42,
+  "fields": {
+    "name": "Stop the Days",
+    "length": 174,
+    "track_index": 2,
+    "artist": 8,
+    "release": [
+      21,
+      19
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 43,
+  "fields": {
+    "name": "The Karma Party",
+    "length": 126,
+    "track_index": 3,
+    "artist": 8,
+    "release": [
+      21
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 44,
+  "fields": {
+    "name": "Nothing Stays the Same",
+    "length": 184,
+    "track_index": 4,
+    "artist": 8,
+    "release": [
+      18,
+      21
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 45,
+  "fields": {
+    "name": "You Can't Know Everything, I Don't Know...",
+    "length": 98,
+    "track_index": 5,
+    "artist": 8,
+    "release": [
+      21
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 46,
+  "fields": {
+    "name": "Plastic Flowers",
+    "length": 200,
+    "track_index": 6,
+    "artist": 8,
+    "release": [
+      21
+    ],
+    "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 47,
+  "fields": {
+    "name": "Happy Xmas (War Is Over)",
+    "length": 208,
+    "track_index": 0,
+    "artist": 8,
+    "release": [
+      20
+    ],
     "genres": [],
     "links": [],
     "favorited_by": []
