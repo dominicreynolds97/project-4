@@ -44,5 +44,21 @@
     ],
     "favorited_by": []
   }
+},
+{
+  "model": "gigs.gig",
+  "pk": 2,
+  "fields": {
+    "name": "Voodoo Open Mic",
+    "description": "Open Mic night in Voodoo, Belfast. Come and showcase your talent on every Thursday!",
+    "date_time": "2021-08-05T20:00:00Z",
+    "price": "0",
+    "venue": 2,
+    "headliner": 11,
+    "support_artists": [
+      11
+    ],
+    "favorited_by": []
+  }
 }
 ]

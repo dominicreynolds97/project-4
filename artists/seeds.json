@@ -244,9 +244,10 @@
     "name": "Reasy Ajarro",
     "description": "Belfast based band, bringing big tunes.",
     "year_formed": 2020,
-    "logo": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/147400959_239364914355364_4447112219842243680_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=T6VdrVVdy4cAX_2eHYX&_nc_ht=scontent-man2-1.xx&oh=c4e62db85651ad0dfd32a5245d863660&oe=60E6AFD9",
+    "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1627472762/local_music_network_images/ktyjomuu6m1k9vbkiein.jpg",
     "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/89094006_104441547847702_1948873463900930048_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=e3f864&_nc_ohc=LQYWQsITLasAX8rRNqC&_nc_ht=scontent-man2-1.xx&oh=4c73d1a9",
     "location": "Belfast",
+    "owner": 1,
     "genres": [
       1,
       2,
@@ -271,6 +272,7 @@
     "logo": "https://static.wixstatic.com/media/3e947d_049f0b13d18242998497842021a9c5bf~mv2_d_1200_1200_s_2.jpg/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/3e947d_049f0b13d18242998497842021a9c5bf~mv2_d_1200_1200_s_2.jpg",
     "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/52323643_1971972529765123_5379226459820785664_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=UGcd0bMCO54AX-i-BI5&_nc_ht=scontent-man2-1.xx&oh=59879ce978d98cb0079efed8f644916d&oe=60C04707",
     "location": "Belfast",
+    "owner": 1,
     "genres": [
       1,
       3,
@@ -300,6 +302,7 @@
     "logo": "https://i.scdn.co/image/ab67616d0000b2730f0cf94d2f83323c18a2ffd6",
     "cover_image": "https://i.scdn.co/image/ab67616d0000b2730f0cf94d2f83323c18a2ffd6",
     "location": "Belfast",
+    "owner": 1,
     "genres": [
       1,
       6
@@ -308,7 +311,8 @@
     "musicians": [],
     "favorited_by": [
       2,
-      3
+      3,
+      1
     ]
   }
 },
@@ -322,6 +326,7 @@
     "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624307852/local_music_network_images/zpymufx0fxp308ypmigk.jpg",
     "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/193209477_236220214912228_3207151856626319197_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=0eRgx9igcJEAX_-gqdw&_nc_ht=scontent-man2-1.xx&oh=757d281549358768446a11825a311db0&oe=60CA3B9B",
     "location": "Belfast",
+    "owner": 1,
     "genres": [
       7
     ],
@@ -345,6 +350,7 @@
     "logo": "https://i1.sndcdn.com/avatars-000357757994-wdfinn-t500x500.jpg",
     "cover_image": "https://i1.sndcdn.com/avatars-000357757994-wdfinn-t500x500.jpg",
     "location": "Belfast",
+    "owner": 1,
     "genres": [
       1,
       2,
@@ -370,6 +376,7 @@
     "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624307901/local_music_network_images/l36ruerraxrioabeicrd.jpg",
     "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/156808451_115604087244623_528108644766235233_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=e3f864&_nc_ohc=AzCIPdOhQSEAX-PlN1g&_nc_ht=scontent-man2-1.xx&oh=5c8f126be70d1eceba8a24762633e74a&oe=60CC559C",
     "location": "Belfast",
+    "owner": 1,
     "genres": [
       8,
       9,
@@ -378,8 +385,8 @@
     "links": [],
     "musicians": [],
     "favorited_by": [
-      3,
-      2
+      2,
+      3
     ]
   }
 },
@@ -393,6 +400,7 @@
     "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624307935/local_music_network_images/e8igl1lwgyuorrakfwft.jpg",
     "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/198781487_2953309404996484_6034807149684194636_n.png?_nc_cat=105&ccb=1-3&_nc_sid=e3f864&_nc_ohc=DC3tgwi6wU4AX-Cv4KL&tn=KKMKzz4FAfdLLzpn&_nc_ht=scontent-man2-1.xx&oh=5c54070fd77668c515fe511b8e60df5b&oe=60CD0BAF",
     "location": "Belfast",
+    "owner": 1,
     "genres": [
       1,
       11,
@@ -401,8 +409,8 @@
     "links": [],
     "musicians": [],
     "favorited_by": [
-      3,
-      2
+      2,
+      3
     ]
   }
 },
@@ -410,12 +418,13 @@
   "model": "artists.artist",
   "pk": 9,
   "fields": {
-    "name": "Fake Flirtations",
+    "name": "The Fake Flirtations",
     "description": "Belfast Alt Rock Band, Great Songs",
     "year_formed": 2017,
     "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624307467/local_music_network_images/hrbumyeawzwcqrwucbmi.png",
     "cover_image": "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/101550803_1634836603354411_8654659590236930048_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=MjXGob-yzUEAX8FAD8C&_nc_ht=scontent-man2-1.xx&oh=fa2b83830b4c45998156ddf5c673a061&oe=60BF7976",
     "location": "Belfast",
+    "owner": 1,
     "genres": [
       1,
       12,
@@ -424,7 +433,9 @@
     "links": [],
     "musicians": [],
     "favorited_by": [
-      3
+      3,
+      2,
+      1
     ]
   }
 },
@@ -438,6 +449,7 @@
     "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1624351084/local_music_network_images/gap54aysqlke2zappm81.jpg",
     "cover_image": "URL",
     "location": "Derry",
+    "owner": 1,
     "genres": [
       10,
       7
@@ -445,8 +457,28 @@
     "links": [],
     "musicians": [],
     "favorited_by": [
-      3
+      3,
+      2
     ]
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 11,
+  "fields": {
+    "name": "Anyone",
+    "description": "for open Mics",
+    "year_formed": 2021,
+    "logo": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1627900926/local_music_network_images/gkgqu5strcpegw48zksa.jpg",
+    "cover_image": "o",
+    "location": "Belfast",
+    "owner": 1,
+    "genres": [
+      1
+    ],
+    "links": [],
+    "musicians": [],
+    "favorited_by": []
   }
 },
 {
@@ -458,6 +490,7 @@
     "release_date": "2021-02-12",
     "artwork": "https://i.scdn.co/image/ab67616d0000b273c53bc5d4ae4931f3bf23cff7",
     "artist": 1,
+    "owner": 1,
     "genres": [
       1,
       2,
@@ -479,6 +512,7 @@
     "release_date": "2019-01-01",
     "artwork": "https://f4.bcbits.com/img/a3394700253_10.jpg",
     "artist": 3,
+    "owner": 1,
     "genres": [
       1,
       3,
@@ -501,6 +535,7 @@
     "release_date": "2017-01-01",
     "artwork": "https://f4.bcbits.com/img/a4292475879_2.jpg",
     "artist": 3,
+    "owner": 1,
     "genres": [
       1
     ],
@@ -520,6 +555,7 @@
     "release_date": "2018-01-02",
     "artwork": "https://i.scdn.co/image/ab67616d0000b2734e2e6a677242b3b520998389",
     "artist": 3,
+    "owner": 1,
     "genres": [
       1
     ],
@@ -539,6 +575,7 @@
     "release_date": "2019-01-01",
     "artwork": "https://m.media-amazon.com/images/I/911UGZNdU1L._SS500_.jpg",
     "artist": 3,
+    "owner": 1,
     "genres": [],
     "links": [],
     "favorited_by": [
@@ -556,6 +593,7 @@
     "release_date": "2021-01-29",
     "artwork": "https://i1.sndcdn.com/avatars-rIEVSUhjZtMlnxF7-2uVCZQ-t240x240.jpg",
     "artist": 1,
+    "owner": 1,
     "genres": [
       1,
       2,
@@ -578,6 +616,7 @@
     "release_date": "2018-01-02",
     "artwork": "https://m.media-amazon.com/images/I/A1pY9fOToxL._SS500_.jpg",
     "artist": 7,
+    "owner": 1,
     "genres": [
       8,
       9,
@@ -599,6 +638,7 @@
     "release_date": "2018-01-02",
     "artwork": "https://direct.rhapsody.com/imageserver/images/alb.306791582/500x500.jpg",
     "artist": 7,
+    "owner": 1,
     "genres": [
       8,
       9,
@@ -619,6 +659,7 @@
     "release_date": "2016-01-01",
     "artwork": "https://m.media-amazon.com/images/I/81VghUtAKcL._SS500_.jpg",
     "artist": 7,
+    "owner": 1,
     "genres": [
       8,
       9,
@@ -639,6 +680,7 @@
     "release_date": "2016-01-01",
     "artwork": "https://m.media-amazon.com/images/I/81h8m+7JaeL._SS500_.jpg",
     "artist": 8,
+    "owner": 1,
     "genres": [],
     "links": [],
     "favorited_by": [
@@ -656,6 +698,7 @@
     "release_date": "2017-01-01",
     "artwork": "https://i.scdn.co/image/ab67616d0000b273191f8793ddaebf55d8f9254e",
     "artist": 8,
+    "owner": 1,
     "genres": [
       11,
       12
@@ -676,6 +719,7 @@
     "release_date": "2017-02-02",
     "artwork": "https://i.scdn.co/image/ab67616d0000b273991834ddf035dce48c3751ef",
     "artist": 8,
+    "owner": 1,
     "genres": [
       11,
       12
@@ -696,6 +740,7 @@
     "release_date": "2018-01-02",
     "artwork": "https://f4.bcbits.com/img/0020823400_10.jpg",
     "artist": 8,
+    "owner": 1,
     "genres": [
       11,
       12
@@ -716,6 +761,7 @@
     "release_date": "2018-01-02",
     "artwork": "https://i.scdn.co/image/ab67616d0000b273aaf7f5b80c4711cb1327507b",
     "artist": 8,
+    "owner": 1,
     "genres": [
       12
     ],
@@ -734,6 +780,7 @@
     "release_date": "2019-01-02",
     "artwork": "https://i1.sndcdn.com/artworks-000472657149-ye5hfp-t500x500.jpg",
     "artist": 8,
+    "owner": 1,
     "genres": [
       12
     ],
@@ -752,13 +799,14 @@
     "release_date": "2019-01-02",
     "artwork": "https://musicglue-images-prod.global.ssl.fastly.net/xtra-mile-recordings/product/brand-new-friend-the-letter-a-single?u=aHR0cHM6Ly9tdXNpY2dsdWUtdXNlci1hcHAtcC00LXAuczMuYW1hem9uYXdzLmNvbS9vcmlnaW5hbHMvMzNjNWYzMzItYTc2Zi00NzAzLWFiMjUtMmU3Y2Q0N2RkYWY2&mode=contain&width=600&v=2",
     "artist": 8,
+    "owner": 1,
     "genres": [
       12
     ],
     "links": [],
     "favorited_by": [
-      3,
-      2
+      2,
+      3
     ]
   }
 },
@@ -771,6 +819,7 @@
     "release_date": "2019-01-02",
     "artwork": "https://direct.rhapsody.com/imageserver/images/alb.429243818/500x500.jpg",
     "artist": 8,
+    "owner": 1,
     "genres": [],
     "links": [],
     "favorited_by": [
@@ -787,6 +836,7 @@
     "release_date": "2020-01-01",
     "artwork": "https://i.kfs.io/album/global/85901391,0v1/fit/500x500.jpg",
     "artist": 8,
+    "owner": 1,
     "genres": [],
     "links": [],
     "favorited_by": [
@@ -803,13 +853,14 @@
     "release_date": "2020-01-01",
     "artwork": "https://i.ytimg.com/vi/vr6cJBvvkog/maxresdefault.jpg",
     "artist": 8,
+    "owner": 1,
     "genres": [
       12
     ],
     "links": [],
     "favorited_by": [
-      3,
-      2
+      2,
+      3
     ]
   }
 },
@@ -822,6 +873,7 @@
     "release_date": "2020-07-01",
     "artwork": "https://img.discogs.com/yHrGmuaA02sOdIYn7bWWGaESlrI=/fit-in/500x500/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-16426938-1607686348-3660.jpeg.jpg",
     "artist": 8,
+    "owner": 1,
     "genres": [
       10
     ],
@@ -840,6 +892,7 @@
     "release_date": "2020-07-01",
     "artwork": "https://f4.bcbits.com/img/a0785049422_10.jpg",
     "artist": 8,
+    "owner": 1,
     "genres": [
       1,
       12
@@ -852,6 +905,45 @@
   }
 },
 {
+  "model": "artists.release",
+  "pk": 27,
+  "fields": {
+    "name": "The Fake Flirtations EP",
+    "type": "EP",
+    "release_date": "2020-06-12",
+    "artwork": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1627949608/local_music_network_images/fthap9blxqzccwhwrcqs.jpg",
+    "artist": 9,
+    "owner": 1,
+    "genres": [
+      1,
+      12,
+      5,
+      6
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.release",
+  "pk": 29,
+  "fields": {
+    "name": "Closer",
+    "type": "Single",
+    "release_date": "2020-06-19",
+    "artwork": "http://res.cloudinary.com/dx9wczbkk/image/upload/v1627984865/local_music_network_images/jr2lfbshqle0eal44vxq.jpg",
+    "artist": 9,
+    "owner": 1,
+    "genres": [
+      1,
+      5,
+      6
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
   "model": "artists.track",
   "pk": 2,
   "fields": {
@@ -859,6 +951,7 @@
     "length": 210,
     "track_index": 0,
     "artist": 1,
+    "owner": 1,
     "release": [
       1
     ],
@@ -879,6 +972,7 @@
     "length": 252,
     "track_index": 0,
     "artist": 1,
+    "owner": 1,
     "release": [
       1
     ],
@@ -898,9 +992,10 @@
     "length": 166,
     "track_index": 0,
     "artist": 1,
+    "owner": 1,
     "release": [
-      6,
-      1
+      1,
+      6
     ],
     "genres": [
       1,
@@ -922,6 +1017,7 @@
     "length": 282,
     "track_index": 0,
     "artist": 3,
+    "owner": 1,
     "release": [
       2
     ],
@@ -940,6 +1036,7 @@
     "length": 323,
     "track_index": 1,
     "artist": 3,
+    "owner": 1,
     "release": [
       2
     ],
@@ -958,9 +1055,10 @@
     "length": 334,
     "track_index": 2,
     "artist": 3,
+    "owner": 1,
     "release": [
-      5,
-      2
+      2,
+      5
     ],
     "genres": [
       1
@@ -977,6 +1075,7 @@
     "length": 217,
     "track_index": 3,
     "artist": 3,
+    "owner": 1,
     "release": [
       2
     ],
@@ -995,6 +1094,7 @@
     "length": 225,
     "track_index": 4,
     "artist": 3,
+    "owner": 1,
     "release": [
       2
     ],
@@ -1013,6 +1113,7 @@
     "length": 205,
     "track_index": 0,
     "artist": 3,
+    "owner": 1,
     "release": [
       3
     ],
@@ -1029,6 +1130,7 @@
     "length": 326,
     "track_index": 0,
     "artist": 3,
+    "owner": 1,
     "release": [
       4
     ],
@@ -1045,6 +1147,7 @@
     "length": 258,
     "track_index": 0,
     "artist": 7,
+    "owner": 1,
     "release": [
       7,
       8
@@ -1066,6 +1169,7 @@
     "length": 262,
     "track_index": 1,
     "artist": 7,
+    "owner": 1,
     "release": [
       7
     ],
@@ -1086,6 +1190,7 @@
     "length": 273,
     "track_index": 2,
     "artist": 7,
+    "owner": 1,
     "release": [
       7
     ],
@@ -1106,6 +1211,7 @@
     "length": 272,
     "track_index": 3,
     "artist": 7,
+    "owner": 1,
     "release": [
       7
     ],
@@ -1126,6 +1232,7 @@
     "length": 236,
     "track_index": 4,
     "artist": 7,
+    "owner": 1,
     "release": [
       7
     ],
@@ -1146,6 +1253,7 @@
     "length": 294,
     "track_index": 5,
     "artist": 7,
+    "owner": 1,
     "release": [
       7
     ],
@@ -1166,6 +1274,7 @@
     "length": 227,
     "track_index": 6,
     "artist": 7,
+    "owner": 1,
     "release": [
       7,
       9
@@ -1187,6 +1296,7 @@
     "length": 448,
     "track_index": 7,
     "artist": 7,
+    "owner": 1,
     "release": [
       7
     ],
@@ -1207,6 +1317,7 @@
     "length": 108,
     "track_index": 0,
     "artist": 8,
+    "owner": 1,
     "release": [
       10
     ],
@@ -1223,6 +1334,7 @@
     "length": 168,
     "track_index": 1,
     "artist": 8,
+    "owner": 1,
     "release": [
       10
     ],
@@ -1239,6 +1351,7 @@
     "length": 191,
     "track_index": 2,
     "artist": 8,
+    "owner": 1,
     "release": [
       10
     ],
@@ -1255,6 +1368,7 @@
     "length": 148,
     "track_index": 3,
     "artist": 8,
+    "owner": 1,
     "release": [
       10
     ],
@@ -1271,6 +1385,7 @@
     "length": 144,
     "track_index": 4,
     "artist": 8,
+    "owner": 1,
     "release": [
       10
     ],
@@ -1287,6 +1402,7 @@
     "length": 161,
     "track_index": 0,
     "artist": 8,
+    "owner": 1,
     "release": [
       11
     ],
@@ -1305,6 +1421,7 @@
     "length": 148,
     "track_index": 7,
     "artist": 8,
+    "owner": 1,
     "release": [
       12,
       13
@@ -1324,6 +1441,7 @@
     "length": 127,
     "track_index": 0,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1340,6 +1458,7 @@
     "length": 163,
     "track_index": 1,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1356,6 +1475,7 @@
     "length": 152,
     "track_index": 2,
     "artist": 8,
+    "owner": 1,
     "release": [
       13,
       15
@@ -1373,6 +1493,7 @@
     "length": 202,
     "track_index": 3,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1389,6 +1510,7 @@
     "length": 201,
     "track_index": 4,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1405,6 +1527,7 @@
     "length": 165,
     "track_index": 5,
     "artist": 8,
+    "owner": 1,
     "release": [
       13,
       14
@@ -1422,6 +1545,7 @@
     "length": 161,
     "track_index": 6,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1438,6 +1562,7 @@
     "length": 119,
     "track_index": 8,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1454,6 +1579,7 @@
     "length": 153,
     "track_index": 9,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1470,6 +1596,7 @@
     "length": 133,
     "track_index": 10,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1486,6 +1613,7 @@
     "length": 198,
     "track_index": 11,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1502,6 +1630,7 @@
     "length": 218,
     "track_index": 12,
     "artist": 8,
+    "owner": 1,
     "release": [
       13
     ],
@@ -1518,6 +1647,7 @@
     "length": 170,
     "track_index": 1,
     "artist": 8,
+    "owner": 1,
     "release": [
       16,
       21
@@ -1535,6 +1665,7 @@
     "length": 230,
     "track_index": 0,
     "artist": 8,
+    "owner": 1,
     "release": [
       17
     ],
@@ -1551,6 +1682,7 @@
     "length": 222,
     "track_index": 0,
     "artist": 8,
+    "owner": 1,
     "release": [
       21
     ],
@@ -1567,9 +1699,10 @@
     "length": 174,
     "track_index": 2,
     "artist": 8,
+    "owner": 1,
     "release": [
-      21,
-      19
+      19,
+      21
     ],
     "genres": [],
     "links": [],
@@ -1584,6 +1717,7 @@
     "length": 126,
     "track_index": 3,
     "artist": 8,
+    "owner": 1,
     "release": [
       21
     ],
@@ -1600,6 +1734,7 @@
     "length": 184,
     "track_index": 4,
     "artist": 8,
+    "owner": 1,
     "release": [
       18,
       21
@@ -1617,6 +1752,7 @@
     "length": 98,
     "track_index": 5,
     "artist": 8,
+    "owner": 1,
     "release": [
       21
     ],
@@ -1633,6 +1769,7 @@
     "length": 200,
     "track_index": 6,
     "artist": 8,
+    "owner": 1,
     "release": [
       21
     ],
@@ -1649,10 +1786,139 @@
     "length": 208,
     "track_index": 0,
     "artist": 8,
+    "owner": 1,
     "release": [
       20
     ],
     "genres": [],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 52,
+  "fields": {
+    "name": "Closer",
+    "length": 286,
+    "track_index": 0,
+    "artist": 9,
+    "owner": 1,
+    "release": [],
+    "genres": [
+      1,
+      12,
+      6
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 61,
+  "fields": {
+    "name": "All Kinds of Cold",
+    "length": 212,
+    "track_index": 0,
+    "artist": 9,
+    "owner": 1,
+    "release": [
+      27
+    ],
+    "genres": [
+      1,
+      12,
+      5,
+      6
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 62,
+  "fields": {
+    "name": "Strange",
+    "length": 243,
+    "track_index": 0,
+    "artist": 9,
+    "owner": 1,
+    "release": [
+      27
+    ],
+    "genres": [
+      1,
+      12,
+      5,
+      6
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 63,
+  "fields": {
+    "name": "Heavy Soul",
+    "length": 320,
+    "track_index": 1,
+    "artist": 9,
+    "owner": 1,
+    "release": [
+      27
+    ],
+    "genres": [
+      1,
+      12,
+      5,
+      6
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 64,
+  "fields": {
+    "name": "Caravan",
+    "length": 284,
+    "track_index": 2,
+    "artist": 9,
+    "owner": 1,
+    "release": [
+      27
+    ],
+    "genres": [
+      1,
+      12,
+      5,
+      6
+    ],
+    "links": [],
+    "favorited_by": []
+  }
+},
+{
+  "model": "artists.track",
+  "pk": 65,
+  "fields": {
+    "name": "Closer",
+    "length": 286,
+    "track_index": 0,
+    "artist": 9,
+    "owner": 1,
+    "release": [
+      29
+    ],
+    "genres": [
+      1,
+      5,
+      6
+    ],
     "links": [],
     "favorited_by": []
   }
