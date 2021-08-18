@@ -5,59 +5,6 @@ By Dominic Reynolds
 My fourth and final project for General Assembly’s Software Engineering Immersive course was to build a full stack application using React.js for the front end and Django.py for the back end. We had the option of going solo, or working in a group. I decided to work by myself for this one, as the project was personal to me. I created a website which would be able to display information about the local music artists in Northern Ireland, and where gigs could be posted and found. This required me to create a larger back end than my peers, with 36 tables, it was more complicated than I had anticipated.
 - - - -
 
-## Technical Requirements
-
-
-You must:
-
-* Build a full-stack application by making your own backend and your own front-end
-* Use a Python Django API using Django REST Framework to serve your data from a Postgres database
-* Consume your API with a separate front-end built with React
-* Be a complete product which most likely means multiple relationships 
-
-and CRUD functionality for at least a couple of models
-* Implement thoughtful user stories/wireframes that are significant enough to help you know which features are core MVP and which you can cut
-* Have a visually impressive design to kick your portfolio up a notch and have something to wow future clients & employers. ALLOW time for this.
-* Be deployed online so it's publicly accessible.
-
-- - - -
-
-## Necessary Deliverables
-
-* A working app hosted on the internet
-* A link to your hosted working app in the URL section of your Github repo
-* A git repository hosted on Github, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
-* A `readme.md` file with:
-    * An embedded screenshot of the app
-    * Explanations of the technologies used
-    * A couple paragraphs about the general approach you took
-    * Installation instructions for any dependencies
-    * Link to your user stories/wireframes – sketches of major views / interfaces in your application
-    * Link to your pitch deck/presentation – documentation of your wireframes, user stories, and proposed architecture
-    * Descriptions of any unsolved problems or major hurdles you had to overcome
-
-- - - -
-
-## Suggested Ways to Get Started
-
-* Don't get too caught up in too many awesome features – simple is always better. Build something impressive that does one thing well.
-* Design first. Planning with user stories & wireframes before writing code means you won't get distracted changing your mind – you'll know what to build, and you can spend your time wisely by just building it.
-* Don't hesitate to write throwaway code to solve short term problems.
-* Read the docs for whatever technologies / frameworks / API's you use.
-* Write your code DRY and build your APIs RESTful.
-* Be consistent with your code style. You're working in teams, but you're only making one app per team. Make sure it looks like a unified effort.
-* Commit early, commit often. Don't be afraid to break something because you can always go back in time to a previous version.
-* Keep user stories small and well-defined, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
-* Write code another developer wouldn't have to ask you about. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
-* Make it all well-formatted. Are you indenting, consistently? Can we find the start and end of every div, curly brace, etc?
-* Comment your code. Will someone understand what is going on in each block or function? Even if it's obvious, explaining the what & why means someone else can pick it up and get it.
-* Write pseudocode before you write actual code. Thinking through the logic of something helps.
-- - - -
-
-## Sign Off Requirements
-* Basic wireframs for front end product
-* An ERD diagram for your database tables/relationships
-
 ## Technologies Used
 - - - -
 * React.js
@@ -239,6 +186,8 @@ In order to be ready to build all of the components I needed, I had to connect m
 #### Index Pages
 
 I wanted these index pages to show multiple cards with the logo and artwork for the artists and releases respectively, the name was to be displayed underneath.  I created a card component, which was used to display one artist or release. Upon navigating to an index page, a get all request would be made for the artists or releases, this information would then be mapped onto the page using the display cards. An original array of objects would be created, and then filtered into another array, depending on what the user wants to see (this filtered array starts the same as the original). I wanted the display cards to adapt to the screen size, to do this I used 5 media queries, and made the card size change depending on the screen width. I found SCSS very helpful for this as I could nest the queries inside of the display card class, it took some fine tuning to get this right. For the gig index page, I created a different card that displayed more information than for artists and releases. There are also more options to filter with the gig page.
+
+![Screenshot](Screenshot%202021-08-04%20at%2014.39.52.png)
 
 ```
 export default function DisplayCard({ name, logo, artwork, id, handleClick, table, cardType }) {
