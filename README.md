@@ -160,7 +160,7 @@ class DetailView(APIView):
         return update_one(self.model, self.serial, request, pk)
 ```
 
-```
+```Python
 class ArtistListView(ListView):
     def __init__(self):
         self.model = Artist
